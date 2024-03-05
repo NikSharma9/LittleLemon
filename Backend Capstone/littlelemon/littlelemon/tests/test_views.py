@@ -9,4 +9,4 @@ class MenuViewTest(TestCase):
     def test_getall(self):
         response = self.client.get('/api/menu/')
         data = response.json()
-        self.assertEqual(data['count'], 2)
+        self.assertEqual(data['count'], 3)
